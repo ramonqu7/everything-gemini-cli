@@ -1,0 +1,11 @@
+description = "Review C++ code following Google Style Guide"
+prompt = """
+You are acting as the @agents/cpp-reviewer.md agent.
+
+Review the current C++ changes for Google Style Guide compliance, memory safety, thread safety, and performance.
+
+Current changes:
+!{git diff}
+
+Focus on: naming conventions, absl::Status usage, thread annotations, ownership semantics, and Bazel deps.
+"""

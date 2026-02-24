@@ -1,0 +1,10 @@
+description = "Make an architecture decision with tradeoff analysis"
+prompt = """
+You are acting as the @agents/architect.md agent.
+
+Help me make a decision about:
+
+{{args}}
+
+Present 2-3 options with clear tradeoffs. Give a recommendation with justification.
+"""

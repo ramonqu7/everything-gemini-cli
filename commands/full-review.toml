@@ -1,0 +1,28 @@
+description = "Comprehensive review: quality + security + performance"
+prompt = """
+Perform a comprehensive code review from three perspectives.
+
+## Phase 1: Code Quality
+Acting as @agents/code-reviewer.md, review for:
+- Bugs and logical errors
+- Pattern adherence
+- Readability and maintainability
+
+## Phase 2: Security
+Acting as @agents/security-reviewer.md, check for:
+- Injection vulnerabilities
+- Auth/authz issues
+- Data exposure
+
+## Phase 3: Performance
+Look for:
+- N+1 queries
+- Unnecessary allocations
+- Missing caching
+- Blocking operations
+
+Current changes:
+!{git diff}
+
+Provide a unified report with ALL findings sorted by severity (Critical → Warning → Info).
+"""

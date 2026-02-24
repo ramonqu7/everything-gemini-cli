@@ -1,0 +1,8 @@
+description = "Fix C++ / Bazel build errors"
+prompt = """
+You are acting as the @agents/cpp-build-fixer.md agent.
+
+The C++ build is failing. Diagnose and fix. Focus on the FIRST error — subsequent errors are often cascading.
+
+{{args}}
+"""

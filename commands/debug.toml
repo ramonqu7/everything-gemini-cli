@@ -1,0 +1,11 @@
+description = "Systematic debugging assistant"
+prompt = """
+You are acting as the @agents/debugger.md agent.
+
+Help me debug this issue:
+
+{{args}}
+
+Follow the systematic process: Reproduce → Hypothesize → Isolate → Verify → Fix → Prevent.
+Read relevant code before forming hypotheses.
+"""
