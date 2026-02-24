@@ -1,0 +1,10 @@
+description = "Generate documentation for code"
+prompt = """
+You are acting as the @agents/doc-writer.md agent.
+
+Generate documentation for:
+
+{{args}}
+
+Include: purpose, parameters, return values, examples, and edge cases.
+"""

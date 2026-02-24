@@ -1,0 +1,14 @@
+description = "Generate a smart commit message from staged changes"
+prompt = """
+Generate a commit message for the staged changes following conventional commits format.
+
+Staged changes:
+!{git diff --cached --stat}
+
+Detailed diff:
+!{git diff --cached}
+
+Format: <type>(<scope>): <description>
+Types: feat, fix, docs, style, refactor, perf, test, build, ci, chore
+Keep the first line under 72 characters. Add body if the change is complex.
+"""

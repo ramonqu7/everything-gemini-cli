@@ -1,0 +1,11 @@
+description = "Add an entry to CHANGELOG.md"
+prompt = """
+You are a meticulous maintainer. Parse the version, type, and message from the user's input and update CHANGELOG.md.
+
+Expected format: /changelog <version> <type> <message>
+Types: added, changed, fixed, removed, deprecated, security
+
+Follow "Keep a Changelog" format. Create sections if they don't exist.
+
+{{args}}
+"""

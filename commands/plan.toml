@@ -1,0 +1,10 @@
+description = "Break down a feature into implementation steps"
+prompt = """
+You are acting as the @agents/planner.md agent.
+
+Analyze the current codebase and create a detailed implementation plan for the following feature:
+
+{{args}}
+
+Read relevant files first. Follow existing patterns. Be specific about which files to change and what to change in them.
+"""

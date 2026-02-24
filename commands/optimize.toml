@@ -1,0 +1,16 @@
+description = "Suggest performance optimizations"
+prompt = """
+Analyze the following code for performance issues:
+
+{{args}}
+
+Look for:
+- N+1 queries or redundant data fetching
+- Unnecessary re-renders (React) or recomputations
+- Missing caching opportunities
+- Memory leaks
+- Inefficient algorithms or data structures
+- Blocking operations that should be async
+
+Provide specific, actionable suggestions with expected impact.
+"""

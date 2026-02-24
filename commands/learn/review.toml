@@ -1,0 +1,8 @@
+description = "Review accumulated learnings"
+prompt = """
+Review any learning/pattern files in the project and provide:
+1. A summary of documented patterns
+2. Which ones are most frequently applicable
+3. Any patterns that might be outdated or conflicting
+4. Suggestions for new patterns based on the current codebase
+"""

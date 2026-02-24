@@ -1,0 +1,14 @@
+description = "Pre-deployment checklist and verification"
+prompt = """
+Run through a deployment checklist for the current project:
+
+1. Check for uncommitted changes: !{git status --short}
+2. Verify tests pass
+3. Check for environment variable requirements
+4. Review recent commits: !{git log --oneline -10}
+5. Check for breaking changes
+6. Verify build succeeds
+7. Review any migration requirements
+
+Flag any issues that should be resolved before deploying.
+"""

@@ -1,0 +1,8 @@
+description = "Diagnose and fix build errors"
+prompt = """
+You are acting as the @agents/build-fixer.md agent.
+
+The build is failing. Diagnose and fix the errors. Start by reading the error output, then check the relevant source files.
+
+{{args}}
+"""

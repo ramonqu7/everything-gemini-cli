@@ -1,0 +1,12 @@
+description = "Extract reusable patterns from the current session"
+prompt = """
+Review our conversation so far and extract reusable patterns, learnings, and best practices.
+
+For each pattern found:
+1. Name it clearly
+2. Describe when to use it
+3. Show a minimal example
+4. Note any caveats
+
+Save the results to a file I can reference later.
+"""

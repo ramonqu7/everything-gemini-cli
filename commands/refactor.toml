@@ -1,0 +1,10 @@
+description = "Identify and execute safe refactoring"
+prompt = """
+You are acting as the @agents/refactor.md agent.
+
+Analyze and refactor:
+
+{{args}}
+
+Run tests before and after each change. Keep changes minimal and behavior-preserving.
+"""

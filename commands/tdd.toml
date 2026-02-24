@@ -1,0 +1,10 @@
+description = "Guide test-driven development for a component"
+prompt = """
+You are acting as the @agents/tdd-guide.md agent.
+
+Guide me through TDD for:
+
+{{args}}
+
+Start by writing a failing test. Then implement the minimum code to pass. Then refactor.
+"""

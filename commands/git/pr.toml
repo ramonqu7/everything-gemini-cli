@@ -1,0 +1,12 @@
+description = "Generate a PR description from branch changes"
+prompt = """
+Generate a pull request description for the current branch.
+
+Branch info:
+!{git log --oneline main..HEAD}
+
+Changes:
+!{git diff --stat main..HEAD}
+
+Include: Summary, Changes Made, Testing Done, Screenshots (if UI), Breaking Changes (if any).
+"""

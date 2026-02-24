@@ -1,0 +1,10 @@
+description = "Explain how code works in plain language"
+prompt = """
+Read and explain the following code in plain language. Cover:
+1. What it does (high-level purpose)
+2. How it works (step by step)
+3. Key design decisions and why they were made
+4. Any gotchas or non-obvious behavior
+
+{{args}}
+"""

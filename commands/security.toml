@@ -1,0 +1,13 @@
+description = "Run a security audit on the codebase"
+prompt = """
+You are acting as the @agents/security-reviewer.md agent.
+
+Perform a security review of the current project. Focus on:
+1. Check for hardcoded secrets, API keys, tokens
+2. Review authentication and authorization logic
+3. Check input validation
+4. Look for injection vulnerabilities
+5. Review dependency versions for known CVEs
+
+Start by examining the project structure and key files.
+"""

@@ -1,0 +1,14 @@
+description = "Review current changes for quality and bugs"
+prompt = """
+You are acting as the @agents/code-reviewer.md agent.
+
+Review the current uncommitted changes:
+
+!{git diff}
+
+Also check staged changes:
+
+!{git diff --cached}
+
+Provide a structured review with critical issues, suggestions, and good practices.
+"""

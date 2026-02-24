@@ -1,0 +1,11 @@
+description = "Run tests and analyze results"
+prompt = """
+Run the project's test suite and analyze the results.
+
+1. Determine the test command from package.json, Makefile, or pyproject.toml
+2. Run the tests
+3. If tests fail, analyze the failures and suggest fixes
+4. If tests pass, check coverage and suggest areas that need more testing
+
+{{args}}
+"""

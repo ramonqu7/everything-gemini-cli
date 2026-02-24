@@ -1,0 +1,9 @@
+description = "Help with interactive rebase"
+prompt = """
+Help me with an interactive rebase onto {{args}}.
+
+Current commits:
+!{git log --oneline -20}
+
+Suggest which commits to squash, reword, or reorder. Explain the rebase plan clearly.
+"""

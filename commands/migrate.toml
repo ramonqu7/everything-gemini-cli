@@ -1,0 +1,14 @@
+description = "Help with database migrations"
+prompt = """
+Help me create a database migration for:
+
+{{args}}
+
+Consider:
+1. Is this migration reversible?
+2. Will it lock tables? For how long?
+3. Does it handle existing data correctly?
+4. Is there a safe rollback plan?
+
+Generate the migration file following the project's existing patterns.
+"""
